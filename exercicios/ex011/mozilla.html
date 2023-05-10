@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mozilla</title>
+</head>
+<style>
+  img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* body {
+    background-color: black;
+    color: white;
+  } */
+</style>
+
+<body>
+  <h1>Mozilla is Cool</h1>
+
+  <img src="fotos/mozilla.jpg" alt="foto mozilla">
+
+  <p>At Mozilla, we´re a global community of</p>
+
+  <ul>
+    <li>technologists</li>
+    <li>thinkers</li>
+    <li>builders</li>
+  </ul>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae cum at libero error asperiores odit, doloribus
+    quos, doloremque facere in dignissimos aut. Consequuntur ab dolores illum officia corporis laudantium numquam!</p>
+
+  <p>Lorem ipsum <a href="https://www.mozilla.org/pt-BR/firefox/">dolor sit</a> amet consectetur adipisicing elit.
+    Accusamus aperiam velit cumque hic, eaque, totam possimus distinctio saepe natus ducimus numquam, quam voluptas
+    reiciendis provident reprehenderit laborum laboriosam dicta rerum.</p>
+
+    <button id="botao1">Tema escuro</button>
+    <button class="botao2">Tema claro</button>
+    <button class="botao3">Tema rosa</button>
+
+</body>
+
+<script>
+  const botaoEscuro = document.querySelector('#botao1');
+  const botaoClaro = document.querySelector('.botao2')
+  const botaoRosa = document.querySelector('.botao3');
+  const body = document.querySelector('body');
+  
+  botaoEscuro.onclick = () => {
+    // body.style.backgroundColor = 'black';
+    // body.style.color = 'white';
+
+    mudarTema('black', 'white');
+  }
+
+  botaoClaro.onclick = () => {
+    // body.style.backgroundColor = 'white';
+    // body.style.color = 'black';
+
+    mudarTema('white', 'black');
+  }
+
+  botaoRosa.onclick = () => {
+    // body.style.backgroundColor = 'white';
+    // body.style.color = 'black';
+
+    mudarTema('pink', 'blue');
+  }
+
+  function mudarTema(corDeFudo,corDaFonte) {
+    body.style.backgroundColor = corDeFudo;
+    body.style.color = corDaFonte;
+  }
+</script>
+
+</html>
