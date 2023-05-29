@@ -1,34 +1,27 @@
- 
-* {
+ body {
   margin: 0px;
   padding: 0px;
   font-size: 1em;
-}
-    
-div.titulo {
-  /* min-height: 100vh; */
-  background-color: white;
-  text-align: center;
-  background-image: url('../ex024/imagem/planta1.png');
+}  
 
-}
+ div.titulo1 {
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: url('../ex024/imagem/planta2.png'), url('../ex024/imagem/planta1.png');
+   background-repeat: no-repeat;
+   background-position: left top, right bottom;
+   background-size: 450px;
 
-imagem {
-  background-image: url('../ex024/imagem/planta1.png');
-
-}
 
 
+ }
 
-p {
-   text-align: right;
 
-}
 
-div.subtitulo {
-  text-align: center;
-}
 
-footer {
-  
-}
+ 
