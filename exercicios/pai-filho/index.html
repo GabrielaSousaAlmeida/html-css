@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pai e Filho</title>
+  <style>
+    div {
+      border: 1px solid black;
+      text-align: center;
+      margin: auto;
+      background-color: white;
+    }
+    .avo {
+      width: 100%;
+      height: 300px;
+    }
+    .pai {
+      width: 80%;
+      height: 200px;
+    }
+    .filho {
+      width: 60%;
+      height: 125px;
+    }
+   .bisneto {
+    width: 40%;
+    height: 60px;
+   }
+
+   /* .filho > div {
+    background-color: red;
+   }
+   .avo > div > div{
+    background-color: blue;
+   } */
+
+   /* .avo > div div  {
+    background-color: blue;
+   } */
+    .avo > div > div {
+      background-color: blue;
+    }
+    .avo > div > div > div {
+      background-color: cyan;
+    }
+    .avo, .pai {
+      background-color:dodgerblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="avo">
+    Avo
+    <div class="pai">
+      Pai
+      <div class="filho">
+        Filho
+        <div class="bisneto">bisneto</div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
